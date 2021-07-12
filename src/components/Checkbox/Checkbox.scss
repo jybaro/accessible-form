@@ -1,0 +1,58 @@
+@import './../../index.scss';
+
+.checkbox {
+    clear: both;
+    margin: 2em 0;
+    display: inline;
+    border: unset;
+    font-size: unset;
+
+    width: 50%;
+    text-align: left;
+    @media screen and (max-width: $tablet-mobile-breakpoint) {
+        width: 100%;
+        float: unset;
+    }
+
+    &--icon {
+        width: 1em;
+        height: 1em;
+        margin-right: 1.5em;
+        background-color: var(--primary-bg-color);
+        padding:0.4em;
+        float: left;
+        vertical-align:middle;
+        margin-top:-0.5em;
+
+    }
+    &--unchecked {
+        width: 0.6em;
+        height: 0.6em;
+        margin-right: 1.5em;
+        background-color: var(--secondary-bg-color);
+        padding:0.4em;
+        float: left;
+        vertical-align:middle;
+        margin-top:-0.5em;
+
+        border: solid 0.2em var(--input-border-color);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    label{
+        text-transform: uppercase;
+        color:var(--normal-text-color);
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+    }
+
+    &:hover, &:active, &:focus {
+        outline:none;
+    }
+    &:hover &--unchecked, 
+    &:active &--unchecked, 
+    &:focus &--unchecked {
+        background-color: var(--option-hover-bg-color);
+        border: 0.2em solid var(--input-active-border-color);
+    }
+}

@@ -1,0 +1,30 @@
+.form {
+    background-image: url(./../../assets/texture.png);
+    padding:2em 1.5em;
+    &--success{
+        background-color: var(--option-hover-bg-color);
+        text-align: center;
+        justify-content: center;
+        padding: 2em;
+        margin: 2em;
+        border-radius: 1em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        border: 0.3em solid var(--input-border-color);
+        font-weight: bold;
+
+    }
+
+    &__help-text {
+        color:var(--normal-text-color);
+        margin-bottom: 1em;
+    }
+
+    &__actions {
+        margin-top: 6em;
+        clear:both
+    }
+
+    &__fields {
+        clear: both;
+    }
+}

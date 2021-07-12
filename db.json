@@ -1,0 +1,10 @@
+{
+  "success": {
+    "status": "success", 
+    "message": "Thank you. You are now subscribed." 
+  },
+  "error": {
+    "status": "error",
+    "message": "Invalid Subscription request."
+  }
+}

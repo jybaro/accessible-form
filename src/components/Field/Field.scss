@@ -1,0 +1,39 @@
+@import './../../index.scss';
+
+.field {
+    width: 50%;
+    float: left;
+    @media screen and (max-width: $tablet-mobile-breakpoint) {
+        width: 100%;
+        float: unset;
+    }
+
+    label {
+        text-transform:uppercase;
+        color:var(--normal-text-color);
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        display: block;
+        margin-bottom: 2em;
+    }
+    &__input {
+        background-color:var(--input-bg-color);
+        border: 0.3em solid var(--input-border-color);
+        padding:1em;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        width:85%;
+        margin-top: 1em;
+        font-size: 1em;
+        outline:none;
+
+        &--error {
+            background-color:var(--input-error-bg-color);
+            border: 0.3em solid var(--input-error-border-color);
+        }
+        &:hover, &:active, &:focus {
+            border: 0.3em solid var(--input-active-border-color);
+            outline:none;
+        }
+    }
+}

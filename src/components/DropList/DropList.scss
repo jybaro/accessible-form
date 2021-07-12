@@ -1,0 +1,89 @@
+@import './../../index.scss';
+
+.DropList {
+
+    width: 25%;
+    float: left;
+    @media screen and (max-width: $tablet-mobile-breakpoint) {
+        width: 100%;
+        float: unset;
+    }
+    label {
+        text-transform:uppercase;
+        color:var(--normal-text-color);
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        display: block;
+        margin-bottom: 2em;
+    }
+    &__container {
+        cursor: pointer;
+        background-color: var(--input-bg-color);
+        border: 0.3em solid var(--input-border-color);
+        padding:0;
+        border-radius: 0.3em;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        width:90%;
+        margin-top: 1em;
+        font-size: 1em;
+        font-weight: normal;
+        &:hover, &:active, &:focus, &--focus {
+            border: 0.3em solid var(--input-active-border-color);
+            outline:none;
+        }
+        @media screen and (max-width: $tablet-mobile-breakpoint) {
+            width: 90%;
+            float: unset;
+        }
+
+    }
+    &__head {
+        padding: 0.8em;
+    }
+    &__arrow {
+        cursor: pointer;
+        float: right;
+        display: block;
+        border: unset;
+        font-size: 1em;
+        background-color: transparent;
+        &--rotate {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+        img {
+            width: 1.2em;
+            height: 1.2em;
+        }
+        &:hover, &:active, &:focus {
+            outline:none;
+        }
+    }
+    &__body {
+    }
+
+    &__option {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        border: unset;
+        font-size: 1em;
+        background-color: transparent;
+        color: var(--normal-text-color);
+        text-align: left;
+        padding: 0.8em;
+        border-top: 0.1em solid var(--input-active-border-color);
+        text-transform: uppercase;
+
+        &--selected {
+            font-weight: bold;
+        }
+        &:hover, &:active, &:focus {
+            outline:none;
+            background-color: var(--option-hover-bg-color);
+        }
+    }
+}

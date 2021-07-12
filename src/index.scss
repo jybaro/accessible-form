@@ -1,0 +1,24 @@
+:root {
+  --normal-text-color: #676767;
+  --primary-bg-color: #803093;
+  --primary-text-color: #FFF;
+  --secondary-bg-color: #FFF;
+  --secondary-text-color: var(--normal-text-color);
+  --input-border-color: #D0E8E6;
+  --input-active-border-color: #9FD1CC;
+  --input-bg-color: var( --secondary-bg-color);
+  --input-error-border-color: #E7899B;
+  --input-error-bg-color: #F8E7E7;
+  --error-text-color: #F00;
+  --option-hover-bg-color: #E1F0EF
+  
+}
+$tablet-mobile-breakpoint: 768px;
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
